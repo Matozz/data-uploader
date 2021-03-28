@@ -30,15 +30,22 @@ function Auth() {
           window.sessionStorage.setItem("isLogin", 1);
           window.location.reload();
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          console.log(err);
+          alert("Login failed");
+        });
     } else {
       auth
         .signUpWithEmailAndPassword(values.email, values.password)
         .then(() => {
           console.log("Sign up Success");
+          alert("Click the validation link in your email and login to start!");
           setStatus("login");
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          console.log(err);
+          alert("Sign Up failed");
+        });
     }
   };
 

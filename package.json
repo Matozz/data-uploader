@@ -1,5 +1,5 @@
 {
-  "name": "data-uploader",
+  "name": "mp-manager",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,7 +35,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
+    "electron:build": "yarn build && electron-builder --win -c.extraMetadata.main=build/main.js",
     "electron:start": "wait-on tcp:3000 && electron ."
   },
   "eslintConfig": {
@@ -56,19 +56,16 @@
       "last 1 safari version"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Matozz/data-uploader.git"
-  },
   "author": "Matoz",
-  "license": "CC0-1.0",
+  "description": "A simple miniprogram data manager based on React + Electron",
   "build": {
     "extends": null,
     "appId": "com.matoz.miniprogram-data-uploader",
-    "producName": "Data Uploader",
-    "copyright": "Copyright ©️ 2021 Matoz",
+    "win": {
+      "icon": "../data-uploader/src/assets/icons/icon.png"
+    },
     "mac": {
-      "type": "distribution"
+      "icon": "../data-uploader/src/assets/icons/icon.png"
     },
     "files": [
       "build/**/*",
