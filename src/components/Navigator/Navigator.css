@@ -1,0 +1,17 @@
+.navigator {
+  height: 100vh;
+  position: fixed;
+}
+
+.ant-menu {
+  height: 100%;
+}
+
+.logout {
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  bottom: 0;
+  float: left;
+  margin: 38px;
+}

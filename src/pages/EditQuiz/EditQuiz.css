@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title {
+  display: flex;
+}
+
+.editor {
+  margin-top: 20px;
+}
+
+.editor .title {
+  min-height: 120px;
+}
+
+.title-uploader > .ant-upload {
+  min-width: 440px;
+  min-height: 100px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-upload-select-picture-card {
+  height: auto;
+}
+/* .previewHtml {
+    margin-top: 10px;
+    border: 1px solid #f0f0f0;
+    min-height: 80px;
+    word-wrap: break-word;
+    padding: 8px;
+    user-select: text !important;
+  }
+  
+  .previewBtn {
+    margin-right: 20px;
+  } */

@@ -1,0 +1,26 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.auth .login-form {
+  width: 300px;
+}
+.auth .login-form-forgot {
+  float: right;
+}
+.auth .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.auth .login-form-button {
+  width: 100% !important;
+}
